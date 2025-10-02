@@ -43,7 +43,7 @@ interface MachineLog {
 export default function SignalRClient() {
   const [connection, setConnection] = useState<HubConnection | null>(null)
   const [isConnected, setIsConnected] = useState(false)
-  const [userId, setUserId] = useState("")
+  const [userId, setUserId] = useState("db1af32e-1324-4a2e-a22f-e69b2d3e9bdb")
   const [serverUrl, setServerUrl] = useState("https://mms-api-fbabadckhjdybmg7.westus2-01.azurewebsites.net/machineHub")
   const [logs, setLogs] = useState<MachineLog[]>([])
   const [connectionStatus, setConnectionStatus] = useState<"disconnected" | "connecting" | "connected">("disconnected")
